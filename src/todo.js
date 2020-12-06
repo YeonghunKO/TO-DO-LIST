@@ -108,8 +108,8 @@ function paintFinishedTask(task) {
 }
 
 function loadState() {
-    pendingTask = JSON.parse(localStorage.getItem(PENDING));
-    finishedTask = JSON.parse(localStorage.getItem(FINISHED));
+    pendingTask = JSON.parse(localStorage.getItem(PENDING)) || [];
+    finishedTask = JSON.parse(localStorage.getItem(FINISHED)) || [];
     // 전역변수로 설정해준 pedningTask/finishedTask 변수안의 내용을 여기서 채워준다.
 }
 
