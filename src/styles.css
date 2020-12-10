@@ -2,6 +2,7 @@
 body {
     color: rgba(218, 237, 282,1.0);
     font-family: 'Arvo', serif;
+    margin: 0px 0px;
 }
 
 main {
@@ -124,11 +125,9 @@ input[type="text"]
 }
 
 .bgImage {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width:100%;
-    height: 120%;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
     z-index: -1;
     animation: fadeIn 0.5s linear;
 }
